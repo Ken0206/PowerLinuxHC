@@ -1,0 +1,5 @@
+
+# MW health check
+35 7 20 * * /root/mw/mw_hc.sh > /root/mw/mw_hc.log 2>&1
+05 8 20 * * /var/monitor_disk/mw_hc_ftp.sh > /root/mw/mw_hc_ftp.log 2>&1
+

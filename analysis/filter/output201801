@@ -1,0 +1,60 @@
+check /var/log/message:
+cxlpt4ap
+cxlpt3ap
+cxlpt2ap
+cxlpt1at
+cxlpt1ap
+cxl2wnat01
+cxl2wnas01
+cxl2wnap01
+cxl2csws02
+cxl2csws01
+cxl2csas02
+cxl2csas01
+cxl1wnds01
+cxl1wndp04
+cxl1wndp02
+cxl1wndp01
+cxl1wnas02
+cxl1wnas01
+cxl1wnap02
+cxl1wnap01
+cxl1csas01
+cxl1csap06
+cxl1csap05
+cxl1csap04
+cxl1csap03
+cxl1csap02
+----------------------------------------------------------
+Disk usage:
+cxlpt2tp error!
+cxlpt1tp error!
+----------------------------------------------------------
+Memory & swap info :
+cxlpt2ws Swap are Memory 0% < 30%
+cxl2wndp04 Swap are Memory 25.800% < 30%
+cxl1wnmp01 Swap are Memory 25.800% < 30%
+cxl1wnds01 Swap are Memory 0% < 30%
+cxl1wndp04 Swap used 71.900% > 50%
+cxl1csap06 Swap are Memory 12.900% < 30%
+cxl1csap05 Swap are Memory 12.900% < 30%
+cxl1csap04 Swap are Memory 12.900% < 30%
+cxl1csap03 Swap are Memory 12.900% < 30%
+cxl1csap02 Swap are Memory 12.900% < 30%
+cxl1csap01 Swap are Memory 12.900% < 30%
+----------------------------------------------------------
+SELinux mode:
+cxlpt2ws Enforcing
+cxlpt2tp Enforcing
+cxlpt1tp Enforcing
+cxl2wnap01 Permissive
+cxl2csws02 Permissive
+cxl2csws01 Permissive
+cxl1wnmp01 Enforcing
+cxl1csws02 Permissive
+cxl1csws01 Permissive
+cxl1csas02 Permissive
+cxl1csas01 Permissive
+----------------------------------------------------------
+check failed in "multipath -ll" :
+----------------------------------------------------------

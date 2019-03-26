@@ -1,0 +1,138 @@
+
+check /var/log/message:
+
+cxl1csap01
+Oct 25 10:52:23 cxl1csap06 multipathd: GPFS1: HDIO_GETGEO failed with 25
+
+
+cxl1csap02
+Oct 24 11:44:58 cxl1csap02 kernel: type=1100 audit(1508816698.789:4678978): pid=102129 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=? acct="support" exe="/usr/sbin/sshd" hostname=192.168.113.37 addr=192.168.113.37 terminal=ssh res=failed'
+Oct 24 11:45:00 cxl1csap02 kernel: type=1100 audit(1508816700.869:4678979): pid=102129 uid=0 auid=4294967295 ses=4294967295 msg='op=password acct="support" exe="/usr/sbin/sshd" hostname=? addr=192.168.113.37 terminal=ssh res=failed'
+Oct 25 11:04:59 cxl1csap02 dbus-daemon: dbus[4971]: [system] Rejected send message, 2 matched rules; type="method_call", sender=":1.1227983" (uid=9100213 pid=103045 comm="systemctl start multipathd ") interface="org.freedesktop.systemd1.Manager" member="StartUnit" error name="(unset)" requested_reply="0" destination="org.freedesktop.systemd1" (uid=0 pid=1 comm="/usr/lib/systemd/systemd --switched-root --system ")
+Oct 25 11:04:59 cxl1csap02 dbus[4971]: [system] Rejected send message, 2 matched rules; type="method_call", sender=":1.1227983" (uid=9100213 pid=103045 comm="systemctl start multipathd ") interface="org.freedesktop.systemd1.Manager" member="StartUnit" error name="(unset)" requested_reply="0" destination="org.freedesktop.systemd1" (uid=0 pid=1 comm="/usr/lib/systemd/systemd --switched-root --system ")
+Oct 25 15:32:39 cxl1csap02 kernel: type=1100 audit(1508916759.332:4702088): pid=109221 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=? acct="support" exe="/usr/sbin/sshd" hostname=192.168.113.32 addr=192.168.113.32 terminal=ssh res=failed'
+Oct 25 15:32:41 cxl1csap02 kernel: type=1100 audit(1508916761.702:4702089): pid=109221 uid=0 auid=4294967295 ses=4294967295 msg='op=password acct="support" exe="/usr/sbin/sshd" hostname=? addr=192.168.113.32 terminal=ssh res=failed'
+
+
+cxl1csap05
+Oct 24 11:35:10 cxl1csap05 kernel: type=1100 audit(1508816110.952:4642604): pid=69849 uid=9100213 auid=9100213 ses=610977 msg='op=PAM:authentication grantors=? acct="root" exe="/usr/bin/su" hostname=? addr=? terminal=pts/2 res=failed'
+Oct 25 10:53:32 cxl1csap05 multipathd: GPFS1: HDIO_GETGEO failed with 25
+
+
+cxl1csap06
+Oct 25 10:52:23 cxl1csap06 multipathd: GPFS1: HDIO_GETGEO failed with 25
+
+
+cxl1cswp01
+Oct 31 08:51:47 cxl1cswp01 kernel: type=1101 audit(1509411107.376:4277431): pid=18067 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=? acct="i9100224" exe="/usr/sbin/sshd" hostname=192.168.113.60 addr=192.168.113.60 terminal=ssh res=failed'
+
+
+cxl1cswp02
+Oct 31 08:51:54 cxl1cswp02 kernel: type=1101 audit(1509411114.947:1981674): pid=3762 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=? acct="i9100224" exe="/usr/sbin/sshd" hostname=192.168.113.60 addr=192.168.113.60 terminal=ssh res=failed'
+
+
+cxl1cswp03
+Oct 30 16:40:29 cxl1cswp03 kernel: type=1100 audit(1509352829.163:2528613): pid=10377 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=? acct="i9100250" exe="/usr/sbin/sshd" hostname=192.168.113.64 addr=192.168.113.64 terminal=ssh res=failed'
+Oct 30 16:40:31 cxl1cswp03 kernel: type=1100 audit(1509352831.353:2528614): pid=10377 uid=0 auid=4294967295 ses=4294967295 msg='op=password acct="i9100250" exe="/usr/sbin/sshd" hostname=? addr=192.168.113.64 terminal=ssh res=failed'
+Oct 30 16:40:49 cxl1cswp03 kernel: type=1101 audit(1509352849.903:2528616): pid=10377 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=? acct="i9100250" exe="/usr/sbin/sshd" hostname=192.168.113.64 addr=192.168.113.64 terminal=ssh res=failed'
+Oct 30 16:49:51 cxl1cswp03 kernel: type=1100 audit(1509353391.177:2528737): pid=15503 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:authentication grantors=? acct="root" exe="/usr/sbin/sshd" hostname=192.168.113.64 addr=192.168.113.64 terminal=ssh res=failed'
+Oct 30 16:49:53 cxl1cswp03 kernel: type=1100 audit(1509353393.187:2528738): pid=15503 uid=0 auid=4294967295 ses=4294967295 msg='op=password acct="root" exe="/usr/sbin/sshd" hostname=? addr=192.168.113.64 terminal=ssh res=failed'
+Oct 30 16:50:00 cxl1cswp03 kernel: type=1112 audit(1509353400.237:2528744): pid=15503 uid=0 auid=4294967295 ses=4294967295 msg='op=login acct="root" exe="/usr/sbin/sshd" hostname=? addr=192.168.113.64 terminal=ssh res=failed'
+Oct 31 08:51:55 cxl1cswp03 kernel: type=1101 audit(1509411115.355:2534871): pid=26133 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=? acct="i9100224" exe="/usr/sbin/sshd" hostname=192.168.113.60 addr=192.168.113.60 terminal=ssh res=failed'
+
+
+----------------------------------------------------------
+
+Disk usage:
+
+cxl1csap02
+/Linux 96% 99M
+/RedHat 96% 255M
+
+cxl1csap04
+/tmp 96% 255M
+/jkl 97% 99M
+
+----------------------------------------------------------
+
+Memory & swap info :
+
+cxl1csap01 Memory used 123.400% > 120%
+cxl1csap01 Swap are Memory 12.900% < 30%
+cxl1csap01 Swap used 52.000% > 50%
+
+cxl1csap02 Swap are Memory 12.900% < 30%
+
+cxl1csap03 Swap used 53.800% > 50%
+
+cxl1csap04 Swap are Memory 12.900% < 30%
+
+cxl1csap05 Memory used 121.600% > 120%
+cxl1csap05 Swap are Memory 12.900% < 30%
+
+cxl1csap06 Swap used 52.900% > 50%
+
+cxl1csap07 Swap are Memory 25.800% < 30%
+
+cxl2csap01 Swap are Memory 12.900% < 30%
+
+cxl2csap02 Swap are Memory 12.900% < 30%
+
+cxl2csap03 Swap are Memory 12.900% < 30%
+
+cxl2csap04 Swap are Memory 12.900% < 30%
+
+cxl2csap05 Swap are Memory 12.900% < 30%
+
+cxl2cswp02 Swap are Memory 12.900% < 30%
+
+----------------------------------------------------------
+
+check multipathd service :
+
+cxl1csap01
+service stop
+
+cxl1csap02
+service disable
+
+cxl1csap04
+service disable
+service stop
+
+cxl1csap07
+service stop
+
+cxl1csap08
+service stop
+
+cxl1cswp01
+service stop
+
+cxl1cswp02
+service stop
+
+cxl1cswp03
+service stop
+
+cxl1cswp04
+service stop
+
+cxl1dmgp01
+service stop
+
+cxl2cswp01
+service stop
+
+cxl2cswp02
+service stop
+
+----------------------------------------------------------
+
+SELinux mode:
+
+cxl1csap02 Enforcing
+cxl1csap04 Permissive
+cxl2csap01 Permissive
+cxl2csap04 Permissive
+----------------------------------------------------------

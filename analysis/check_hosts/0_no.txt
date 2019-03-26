@@ -1,0 +1,6 @@
+cxl0csas01
+cxl0csas02
+cxl0csws01
+cxl0csws02
+cxl1batp01
+cxl1batp02

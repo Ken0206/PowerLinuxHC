@@ -1,0 +1,47 @@
+##mkdir /root/mw
+touch /root/mw/test
+
+rm -f /root/mw/test
+
+ls /PowerLinuxHC
+ls /PowerLinuxHC/powerLinux
+
+grep -E "error|failed" /var/log/messages
+free -m
+getenforce
+df -h | grep -E "rootvg-root|rootvg-var|rootvg-tmp"
+multipath -ll
+systemctl status multipathd
+
+crontab -l
+
+# MW health check
+37 7 20 * * /root/mw/mw_hc.sh > /root/mw/mw_hc.log 2>&1
+
+echo '/root/mw/powerLinuxHC.sh' >> /root/mw/mw_hc.sh
+echo '/root/mw/call_hc_powerLinux.sh' >> /root/mw/mw_hc.sh
+
+
+
+
+cat /etc/redhat-release
+
+ls mw
+
+cat /root/mw/mw_hc.sh
+
+ls -l /var/monitor_disk/mw_hc_ftp.sh
+
+crontab -l | grep mw_hc
+
+
+
+. cpf.sh
+. 2crontab.sh
+cd /root
+rm -f dl.sh
+crontab -e
+
+
+
+
